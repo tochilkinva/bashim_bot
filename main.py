@@ -135,6 +135,6 @@ def test():
 
 if __name__ == '__main__':
     logging.debug('Бот запущен')
-    last_quote_number = 466155
+    # last_quote_number = 466155
     main()
     # test()
