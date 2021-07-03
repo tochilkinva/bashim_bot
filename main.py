@@ -101,9 +101,12 @@ def main():
         try:
             response = request_site(URL)
             quotes = parse_quotes(response)
-            new_quotes = find_new_quotes(quotes)
-            for key, value in new_quotes.items():
-                send_message(f'Цитата: {value}')
+            if quotes:
+                new_quotes = find_new_quotes(quotes)
+                if new_quotes:
+                    for key, value in new_quotes.items():
+                        send_message(f'Цитата: {value}')
+
             time.sleep(5 * 60)  # Опрашивать раз в пять минут
 
         except Exception as e:
