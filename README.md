@@ -9,10 +9,10 @@ A bot for parsing new quotes from bash.im and sending them to the Telegram chann
 ### Команды
 - /start - Появляется при первом старте бота
 - /help - Выводит описание и команды для работы с ботом
-- /rand - Присылает случайные цитата с https://bash.im/random
+- /rand - Присылает случайные цитаты с https://bash.im/random
 
 ### Технологии
-Python 3.7
+Python 3.7, Beautifulsoup, Telegram API
 
 ### Запуск проекта
 Создайте файл .env и укажите необходимые данные.
@@ -20,7 +20,7 @@ Python 3.7
 Затем просто запустите код в Python.
 
 ### Тесты
-Пока не добавил тесты через unittest. Есть функция логгирования.
+Пока не добавил. Есть функция логгирования.
 
 ### Автор
 Валентин
